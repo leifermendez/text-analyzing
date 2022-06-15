@@ -11,31 +11,31 @@ export class Mail extends BaseEntity {
   @PrimaryGeneratedColumn()
   id: number;
 
-  @Column()
+  @Column("longtext")
   asunto: string;
 
   @Column("longtext")
   cuerpo: string;
 
-  @Column()
+  @Column("longtext")
   de_nombre: string;
 
-  @Column()
+  @Column("longtext")
   de_direccion: string;
 
-  @Column()
+  @Column("longtext")
   para_nombre: string;
 
-  @Column()
+  @Column("longtext")
   para_direccion: string;
 
-  @Column()
+  @Column("longtext")
   cc_nombre: string;
 
-  @Column()
+  @Column("longtext")
   cc_direccion: string;
 
-  @Column()
+  @Column("longtext")
   score: string;
 
   @Column("longtext")
