@@ -1,0 +1,31 @@
+{
+  "name": "analyzing-text",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon ./src/index.ts",
+    "build": "tsc -p ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/language": "^4.3.2",
+    "bull": "^4.8.3",
+    "csv-parse": "^5.1.0",
+    "csv-parser": "^3.0.0",
+    "csv-splitter": "^1.1.0",
+    "dotenv": "^16.0.1",
+    "google-spreadsheet": "^3.3.0",
+    "mysql2": "^2.3.3",
+    "reflect-metadata": "^0.1.13",
+    "typeorm": "^0.3.6"
+  },
+  "devDependencies": {
+    "@types/bull": "^3.15.8",
+    "@types/google-spreadsheet": "^3.2.2",
+    "@types/node": "^17.0.42"
+  }
+}
