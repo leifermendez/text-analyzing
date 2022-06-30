@@ -2,7 +2,7 @@ import { createReadStream } from "fs"
 import { parse } from "csv-parse"
 import { GeneralQueue } from "../queues/GeneralQueue";
 
-const PATH = `${process.cwd()}/test1.csv`;
+const PATH = `${process.cwd()}/test-split.csv`;
 /**
  *
  */

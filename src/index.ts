@@ -3,9 +3,10 @@ import "reflect-metadata";
 import { GeneralProcceses } from "./processes/GeneralProcesses";
 import { GeneralQueue } from "./queues/GeneralQueue";
 import { SpreadSheet } from "./services/SpreadSheet";
-import { NaturalLanguage } from "./services/NaturalLanguage";
+import { NaturalLanguage } from "./services/GoogleNaturalLanguage";
 import { ReadCSV } from "./services/ReadCSV";
 import { AppDataSource } from "./data/data-source";
+import { AzureNaturalLanguage } from './services/AzureNaturalLanguage';
 
 class MainApp {
   constructor(private readonly readCsv: ReadCSV) {}
@@ -29,7 +30,7 @@ class MainApp {
  * Services
  */
 
-const naturalLanguage = new NaturalLanguage();
+const naturalLanguage = new AzureNaturalLanguage();
 const spreadSheet = new SpreadSheet();
 const useCase = new UseCase()
 const generalProcess = new GeneralProcceses(naturalLanguage, spreadSheet, useCase);
